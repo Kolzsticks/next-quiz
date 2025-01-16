@@ -39,10 +39,10 @@ export function QuizTimer({ duration, onTimeUp, isActive }: QuizTimerProps) {
   const seconds = timeLeft % 60;
 
   return (
-    <Card className="p-4 mb-4 bg-white/50 backdrop-blur-sm">
+    <Card className="p-4 mb-4 bg-white/50 backdrop-blur-sm border-none shadow-lg">
       <div className="flex items-center gap-2 mb-2">
-        <Timer className="w-5 h-5 text-primary" />
-        <span className="font-medium">
+        <Timer className="w-5 h-5 text-primary animate-pulse" />
+        <span className="font-medium text-lg">
           {String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, '0')}
         </span>
       </div>
