@@ -19,7 +19,7 @@ export async function POST(req: NextRequest) {
 
     const chatCompletion = await groq.chat.completions.create({
       messages: [
-        { role: "system", content: "You are a helpful assistant." },
+        { role: "system", content: "You are a very helpful assistant." },
         { role: "user", content: message },
       ],
       model: "qwen-2.5-32b",
